@@ -60,11 +60,11 @@ module Spree
         @breadcrumbs = []
       end
 
-      return redirect_to archive_posts_path unless @post
+      return redirect_to blog_posts_path unless @post
     end
 
     def archive
-      @posts = default_scope.web
+      redirect_to blog_posts_path
     end
 
   end
